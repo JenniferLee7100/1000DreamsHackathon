@@ -36,7 +36,7 @@
         </script>
         <div class="row">
           <div class="column">
-            <img id="picture" src="punch1.png" width="214" height="196" />
+            <img id="picture" src="punch1.png" width="100" height="150" />
             <div id="winner" style="width:100px;height:50px;display: none; text-decoration-color: seashell;">You Won!!!</div>
             <div id="loser" style="width:100px;height:50px;display: none; text-decoration-color: seashell;">You Lost!!!</div>
             <button type="button" onClick="restart()" style="display: none" id=again>Try to Beat Your Time?</button>
@@ -58,10 +58,10 @@
                 {
                     punchAnimation();
                     clicks += 1;
-                    var myHeight = clicks * 5;
+                    var myHeight = clicks * 2.5;
                     elem.style.height = myHeight + "px";
                     var elem2 = document.getElementById("whiteBar1");
-                    elem2.style.height = 500 - myHeight + "px";
+                    elem2.style.height = 250 - myHeight + "px";
                 }
                 else if(clicks == 100)
                 {
@@ -91,15 +91,15 @@
             
             
         
-            <div id="barOutline" style="width:100px;height:500px;border:3px solid white;vertical-align: bottom">
-                <div id="whiteBar1" style="width:100px;height:500px;background-color: white"></div>
-                <div id="bar1" style="width:100px;height:0px;border:1px soli white;background-color: blue;vertical-align: bottom"></div>
+            <div id="barOutline" style="width:50px;height:250px;border:3px solid white;vertical-align: bottom">
+                <div id="whiteBar1" style="width:50px;height:250px;background-color: white"></div>
+                <div id="bar1" style="width:50px;height:0px;border:1px soli white;background-color: blue;vertical-align: bottom"></div>
             </div>
-            <p>Clicks: <a id="clicks">0</a></p>
+            <!--<p>Clicks: <a id="clicks">0</a></p>-->
             <button type="button" onClick="onClick()">Click Button to Fill Bar</button>
             </div>
         <div class="column">
-            <img id="picture2" src="punch3.png" width="214" height="196" />
+            <img id="picture2" src="punch3.png" width="100" height="150" />
             <div id="winner2" style="width:100px;height:50px;display: none"; text-decoration-color: seashell;>You Won!!!</div>
             <div id="loser2" style="width:100px;height:50px;display: none"; text-decoration-color: seashell;>You Lost!!!</div>
             <script type="text/javascript">
@@ -115,10 +115,10 @@
                 {
                     punchAnimation2();
                     clicks2 += 1;
-                    var myHeight = clicks2 * 5;
+                    var myHeight = clicks2 * 2.5;
                     elem.style.height = myHeight + "px";
                     var elem2 = document.getElementById("whiteBar2");
-                    elem2.style.height = 500 - myHeight + "px";
+                    elem2.style.height = 250 - myHeight + "px";
                 }
                 else if(clicks2 == 100)
                 {
@@ -144,11 +144,11 @@
             </script>
             
         
-            <div id="barOutline2" style="width:100px;height:500px;border:3px solid white;vertical-align: bottom">
-                <div id="whiteBar2" style="width:100px;height:500px;background-color: white"></div>
-                <div id="bar2" style="width:100px;height:0px;border:1px solid white;background-color: red;vertical-align: bottom"></div>
+            <div id="barOutline2" style="width:50px;height:250px;border:3px solid white;vertical-align: bottom">
+                <div id="whiteBar2" style="width:50px;height:250px;background-color: white"></div>
+                <div id="bar2" style="width:50px;height:0px;border:1px solid white;background-color: red;vertical-align: bottom"></div>
             </div>
-            <p>Clicks: <a id="clicks2">0</a></p>
+            <!--<p>Clicks: <a id="clicks2">0</a></p>-->
             </div>
     </div>
     </div>

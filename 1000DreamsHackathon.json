@@ -6,7 +6,7 @@
   "extensionViews": [
     {
       "id": "1",
-      "label": "auoshf",
+      "label": "dgfs",
       "channelId": "462125090",
       "configurationAnchor": "panel",
       "displayChannelName": "jrobilee",
@@ -47,7 +47,7 @@
     "installationCount": -42,
     "liveConfigUrl": "",
     "name": "1000DreamsHackathon",
-    "panelHeight": 300,
+    "panelHeight": 500,
     "privacyPolicyUrl": "",
     "requestIdentityLink": false,
     "requiredBroadcasterAbilities": [],
@@ -73,7 +73,7 @@
       },
       "panel": {
         "viewerUrl": "https://localhost:8080/panel.html",
-        "height": 300,
+        "height": 500,
         "canLinkExternalContent": false
       },
       "videoOverlay": {
