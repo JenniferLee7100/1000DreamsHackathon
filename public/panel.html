@@ -15,14 +15,26 @@
         var clicks = 0;
         function onClick() {
             clicks += 1;
+            var myHeight = clicks * 5;
+            var elem = document.getElementById("bar1");
             document.getElementById("clicks").innerHTML = clicks;
+            if(myHeight <= 500)
+            {
+                elem.style.height = myHeight + "px";
+            }
+            if(myHeight == 500)
+            {
+                var win = document.getElementById("winner");
+                win.style.display = "block";
+            }
         };
         </script>
         <button type="button" onClick="onClick()">Click Button to Fill Bar</button>
         <p>Clicks: <a id="clicks">0</a></p>
-    <div style="width:100px;height:500px;border:1px solid #000;"></div>
-        <div id="color" style="border-radius: 50px; transition: background-color 0.5s ease; margin-top: 30px; width: 100px; height: 100px; background-color: #6441A4; float: left; position: relative; left: -50%">
+    <div id="barOutline" style="width:100px;height:500px;border:1px solid #000;vertical-align: middle">
+        <div id="bar1" style="width:100px;height:0px;border:1px solid #000;background-color: blue"></div>
         </div>
+    <div id="winner" style="width:100px;height:50px;border:1px solid #000;display: none">You Won!!!</div>
     </div>
     <div id="list">
     </div>
