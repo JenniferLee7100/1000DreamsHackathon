@@ -12,7 +12,7 @@
     <script src="viewer.js" type="text/javascript"></script>
     <h2>Bar Fight!!!</h2>
     <div id="winner" style="width:100px;height:50px;display: none">You Won!!!</div>
-    </div>
+
     <script type="text/javascript">
         var clicks = 0;
         function onClick() {
@@ -32,8 +32,27 @@
                 win.style.display = "block";
             }
         };
+
+        var imageTracker = 1; 
+        function punchAnimation(){
+            var image = document.getElementById("picture");
+            if(imageTracker==1){
+                image.src = "punch2.png";
+                imageTracker = 2; 
+            }else{
+                image.src = "punch1.png";
+                imageTracker = 1; 
+            }
+        }
+        function both(){
+            console.log("Both got called"); 
+            onClick();
+            punchAnimation();
+        }
         </script>
-        <button type="button" onClick="onClick()">Click Button to Fill Bar</button>
+        <img id="picture" src="punch1.png" width="107" height="98" />
+        <img id="picture2" src="punch3.png" width="107" height="98" />
+        <button type="button" onClick="both()">Click Button to Fill Bar</button>
         <p>Clicks: <a id="clicks">0</a></p>
     <div id="barOutline" style="width:100px;height:500px;border:1px solid #000;vertical-align: bottom">
         <div id="whiteBar1" style="width:100px;height:500px;"></div>
