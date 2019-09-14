@@ -1,0 +1,58 @@
+{
+  "allowHttpBackend": false,
+  "backendCommand": "node backend -c \"2w2wq7pkm494saz7gerc727cqbr381\" -s \"MnzDDA9yn3d87Bic5NpflknFVTwTa67/au2IwbXmfzM=\"",
+  "backendFolderName": "extension-getting-started/services",
+  "certificateExceptions": [],
+  "extensionViews": [],
+  "frontendCommand": "",
+  "frontendFolderName": "extension-getting-started/public",
+  "manifest": {
+    "anchor": "video_overlay",
+    "assetUrls": [],
+    "authorName": "jrobilee",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "https://localhost:8080/config.html",
+    "configurationLocation": "none",
+    "description": "",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "",
+    "iconUrls": {},
+    "id": "2w2wq7pkm494saz7gerc727cqbr381",
+    "installationCount": -42,
+    "liveConfigUrl": "",
+    "name": "HelloWorldExtention7100",
+    "panelHeight": 0,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": false,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "",
+    "supportEmail": "jennifer.lee7100@gmail.com",
+    "vendorCode": "",
+    "version": "0.0.1",
+    "viewerSummary": "",
+    "viewerUrl": "",
+    "viewerUrls": {
+      "videoOverlay": "https://localhost:8080/video_overlay.html"
+    },
+    "views": {
+      "config": {
+        "canLinkExternalContent": false,
+        "viewerUrl": "https://localhost:8080/config.html"
+      },
+      "videoOverlay": {
+        "canLinkExternalContent": false,
+        "viewerUrl": "https://localhost:8080/video_overlay.html"
+      }
+    },
+    "whitelistedConfigUrls": [],
+    "whitelistedPanelUrls": []
+  },
+  "name": "HelloWorldExtention7100",
+  "version": 1
+}
