@@ -16,21 +16,23 @@
     <script type="text/javascript">
         var clicks = 0;
         function onClick() {
-            clicks += 1;
-            var myHeight = clicks * 5;
+            
             var elem = document.getElementById("bar1");
-            document.getElementById("clicks").innerHTML = clicks;
-            if(myHeight <= 500)
+            if(clicks < 100)
             {
+                punchAnimation();
+                clicks += 1;
+                var myHeight = clicks * 5;
                 elem.style.height = myHeight + "px";
                 var elem2 = document.getElementById("whiteBar1");
                 elem2.style.height = 500 - myHeight + "px";
             }
-            if(myHeight == 500)
+            if(clicks == 100)
             {
                 var win = document.getElementById("winner");
                 win.style.display = "block";
             }
+            document.getElementById("clicks").innerHTML = clicks;
         };
 
         var imageTracker = 1; 
@@ -44,20 +46,16 @@
                 imageTracker = 1; 
             }
         }
-        function both(){
-            console.log("Both got called"); 
-            onClick();
-            punchAnimation();
-        }
         </script>
         <img id="picture" src="punch1.png" width="107" height="98" />
         <img id="picture2" src="punch3.png" width="107" height="98" />
-        <button type="button" onClick="both()">Click Button to Fill Bar</button>
-        <p>Clicks: <a id="clicks">0</a></p>
+        
     <div id="barOutline" style="width:100px;height:500px;border:1px solid #000;vertical-align: bottom">
         <div id="whiteBar1" style="width:100px;height:500px;"></div>
         <div id="bar1" style="width:100px;height:0px;border:1px solid #000;background-color: blue;vertical-align: bottom"></div>
         </div>
+    <p>Clicks: <a id="clicks">0</a></p>
+    <button type="button" onClick="onClick()">Click Button to Fill Bar</button>
     <div id="list">
     </div>
 </body>
