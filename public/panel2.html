@@ -92,11 +92,7 @@
             <div id="winner2" style="width:100px;height:50px;display: none"; text-decoration-color: seashell;>You Won!!!</div>
             <div id="loser2" style="width:100px;height:50px;display: none"; text-decoration-color: seashell;>You Lost!!!</div>
             <script type="text/javascript">
-                var i;
                 var clicks2 = 0;
-                
-                window.setInterval(onClick2, 180);
-                
                 function onClick2() {
             
                 var elem = document.getElementById("bar2");
@@ -138,6 +134,7 @@
                 <div id="bar2" style="width:100px;height:0px;border:1px solid white;background-color: red;vertical-align: bottom"></div>
             </div>
             <p>Clicks: <a id="clicks2">0</a></p>
+            <button type="button" onClick="onClick2()">Click Button to Fill Bar</button>
             </div>
     </div>
     </div>
