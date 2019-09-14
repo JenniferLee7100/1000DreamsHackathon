@@ -40,8 +40,17 @@
             <div id="winner" style="width:100px;height:50px;display: none; text-decoration-color: seashell;">You Won!!!</div>
             <div id="loser" style="width:100px;height:50px;display: none; text-decoration-color: seashell;">You Lost!!!</div>
             <button type="button" onClick="restart()" style="display: none" id=again>Try to Beat Your Time?</button>
+            <button type="button" onClick="replay()" style="display: none" id=replay>Try Again?</button>
             <script type="text/javascript">
                 var clicks = 0;
+                function replay()
+                {
+                    clicks = 0;
+                    clicks2 = 0;
+                    window.setInterval(onClick2, time);
+                    elem.style.height = 0 + "px";
+                    go.style.display = "none";
+                }
                 function restart()
                 {
                     time = time*clicks2/100;
@@ -126,6 +135,8 @@
                     win.style.display = "block";
                     var loss = document.getElementById("loser");
                     loss.style.display = "block";
+                    var go = document.getElementById("replay");
+                    go.style.display = "block";
                 }
                 document.getElementById("clicks2").innerHTML = clicks2;
                 };
